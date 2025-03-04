@@ -1,0 +1,14 @@
+//SE GENERAN PARA AUTO COMPLETADO Y ANALISIS DE ERRORES
+import {IsString, MinLength} from 'class-validator'
+
+
+export class CreateTaskDto{
+
+    @IsString()
+    @MinLength(1)
+    title: string
+
+    @IsString()
+    @MinLength(1)
+    description: string
+}
